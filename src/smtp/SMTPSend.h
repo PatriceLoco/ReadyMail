@@ -475,7 +475,7 @@ namespace ReadyMailSMTP
             {
 #if defined(ESP32) || defined(ESP8266)
                 if (smtp_ctx->ts < READYMAIL_TIMESTAMP)
-                    smtp_ctx->ts = time(nullptr);
+                    smtp_ctx->ts = ::time(nullptr);
 #endif
                 // Apply default value if the timestamp is not valid.
                 if (smtp_ctx->ts < READYMAIL_TIMESTAMP)
@@ -1105,4 +1105,5 @@ namespace ReadyMailSMTP
     };
 }
 #endif
+
 #endif
