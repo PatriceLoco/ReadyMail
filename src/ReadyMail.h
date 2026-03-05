@@ -177,7 +177,7 @@ public:
 private:
 };
 
-ReadyMailClass ReadyMail;
+// ReadyMailClass ReadyMail;
 
 enum readymail_auth_type
 {
@@ -246,5 +246,6 @@ namespace ReadyMailCallbackNS
 #include "smtp/SMTPMessage.h"
 #include "smtp/SMTPClient.h"
 #endif
+
 
 #endif
